@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: 
+        }
+      * {
+        box-sizing: border-box;
+      }
+      
+      input[type=text], input[type=email], textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        font-weight: bold;
+      }
+      
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .form-group {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      
+      .form-group .col-25 {
+        flex-basis: 25%;
+        max-width: 25%;
+      }
+      
+      .form-group .col-75 {
+        flex-basis: 75%;
+        max-width: 75%;
+      }
+      
+      .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .btn:hover {
+        background-color: #45a049;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .form-group .col-25, .form-group .col-75 {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ONLINE PAYMENT FRAUD DETECTION</h2>
+    <form class="whole-form" action="/pred" method="post">
+      <div class="container">
+        <div class=" form-group">
+          <div class="col-25">
+            <label for="name">STEP:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="STEP">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-25">
+            <label for="text">TYPE:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="Type" name="Type">
+          </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-25">
+              <label for="text">AMOUNT:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="AMOUNT" name="AMOUNT">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-25">
+              <label for="text">OldbalanceOrg:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="OldbalanceOrg" name="OldbalanceOrg">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-25">
+              <label for="text">NewbalanceOrig:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="NewbalanceOrig" name="NewbalanceOrig">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-25">
+              <label for="text">Oldbalancedest:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Oldbalancedest" name="Oldbalancedest">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-25">
+              <label for="text">Newbalancedest:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Newbalancedest" name="Newbalancedest">
+            </div>
+          </div>
+
+        
+
+        <div class="form-group">
+          <input type="submit" value="Submit" class="btn">
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
